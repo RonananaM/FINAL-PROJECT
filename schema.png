@@ -1,1 +1,23 @@
+Table users {
+  user_id SERIAL [pk]
+  username VARCHAR(50) [unique, not null]
+  email VARCHAR(100) [unique, not null]
+  created_at TIMESTAMP [default: "CURRENT_TIMESTAMP"]
+}
+
+Table posts {
+  post_id SERIAL [pk]
+  user_id INT [ref: > users.user_id]
+  title VARCHAR(255) [not null]
+  content TEXT [not null]
+  created_at TIMESTAMP [default: "CURRENT_TIMESTAMP"]
+}
+
+Table comments {
+  comment_id SERIAL [pk]
+  post_id INT [ref: > posts.post_id]
+  user_id INT [ref: > users.user_id]
+  content TEXT [not null]
+  created_at TIMESTAMP [default: "CURRENT_TIMESTAMP"]
+}
 
