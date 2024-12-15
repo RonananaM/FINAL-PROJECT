@@ -26,3 +26,6 @@ public class DatabaseIntegration {
         }
     }
 }
+
+
+java -cp .:mysql-connector-java.jar your.package.DatabaseIntegration
