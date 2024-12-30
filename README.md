@@ -1,9 +1,4 @@
-/src
-  /main
-    /java
-      /your/package
-        DatabaseIntegration.java
-/db
-  init.sql
-  schema.png
-README.md
+# Java MySQL Database Integration Project
+
+## Overview
+This project demonstrates how to integrate a Java application with a
