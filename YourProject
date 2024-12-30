@@ -1,0 +1,10 @@
+│
+├── /src
+│   └── YourJavaFiles.java
+│
+├── /db
+│   ├── init.sql
+│   └── schema.png
+│
+├── README.md
+└── pom.xml (if using Maven) or build.gradle (if using Gradle)
